@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5f4d6;
+    font-size: 1.1rem;
+    font-family: Poppins;
+}
+
+header {
+    background-color: #4ba44e;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #def9c4;
+    padding: 2em;
+    margin-bottom: 55px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+section h2, h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 55vw;
+    height: 3vh;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #67b151;
+    color: #f7f5f5;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+#result {
+    width: 56vw;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #4ba44e;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+#tips img {
+    padding: 10px 100px;
+    width: 45vw;
+}
+
+#tips h2 {
+    text-align: center;
+}
+
+#home {
+    width: 60vw;
+    margin-top: 45px;
+    text-align: center;
+    padding: 0.5em 2em 2em 2em;
+}
+
+#tips, #about {
+    width: 60vw;
+}
+
+#calculator {
+    width: 60vw;
+}
+
+#calculator h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.none {
+    display: none;
+}
+
+#home a {
+    text-decoration: none;
+    color: white;
+}
+
+#home button {
+    margin-left: 0;
+}
+
+#about {
+    text-align: center;
+}
+
+#home img {
+    width: 7rem;
+    height: 7rem;
+}
+
+#home h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Additional CSS */
+#chart-container {
+    width: 40vw;
+    height: 40vh;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carbonChart {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#comparison-result {
+    width: 40vw;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+#comparison-result p {
+    margin-bottom: 10px;
+}

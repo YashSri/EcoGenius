@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chart.js and Chart.js Data Labels Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <style>
+        /* Additional CSS for the chart and result container */
+        #chart-container {
+            width: 30vw;
+            height: 50vh;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #carbonChart {
+            width: 100% !important;
+            height: 100% !important;
+        }
+        #comparison-result {
+            width: 40vw;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+        #comparison-result p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#calculator">Eco-Genius</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <img src="img/logo2.png" alt="">
+            <h1>Welcome to Eco-Genius! </h1>
+            <p>Your carbon footprint tracker. Use our sleek, easy tool to reduce emissions and save the planet.</p>
+            <button class="btn"><a href="#calculator">Get Started</a></button>
+        </section>
+        <section id="calculator">
+            <h2>Calculator</h2>
+            <form>
+                <label for="electricity">Electricity Consumption (kWh/month)</label>
+                <input type="number" id="electricity" name="electricity">
+                <label for="gas">Gas Consumption (therms/month)</label>
+                <input type="number" id="gas" name="gas">
+                <label for="oil">Oil Consumption (gallons/month)</label>
+                <input type="number" id="oil" name="oil">
+                <label for="water">Water Consumption (gallons/month)</label>
+                <input type="number" id="water" name="water">
+                <label for="waste">Waste Generation (pounds/month)</label>
+                <input type="number" id="waste" name="waste">
+                <label for="transportation">Transportation (miles/month)</label>
+                <input type="number" id="transportation" name="transportation">
+                <button class="btn" id="calculate">Calculate</button>
+            </form>
+            <div class="none" id="chart-container">
+                <canvas id="carbonChart"></canvas>
+            </div>
+            <div class="none" id="comparison-result"></div>
+        </section>
+        <section id="tips">
+            <h2>TIPS TO DECREASE YOUR FOOTPRINT</h2>
+            <img src="img/tips (3).png" alt="">
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>This carbon footprint calculator is designed to help individuals and households estimate their greenhouse gas emissions and take steps to reduce them.</p>
+        </section>
+    </main>
+    <footer>
+        <p>CLEAN INDIA, GREEN INDIA</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
